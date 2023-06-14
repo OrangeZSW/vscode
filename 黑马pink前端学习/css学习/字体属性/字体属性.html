@@ -8,7 +8,7 @@
     <style>
         h2 {
             font-family: '微软雅黑';
-            font-weight: 400;
+            font-weight: 700;
             /* normal // 400 不加粗 */
         }
 
@@ -20,11 +20,15 @@
 
         body {
             font-size: 16px;
-            font-weight: 700;
+            font-weight: 400;
         }
 
         /* bold加粗 ，提倡用数字700*/
         /* 标题标签比较特殊，需要单独指定大小 */
+
+        .fuhe {
+            font: italic 700 16px '微软雅黑'
+        }
     </style>
 </head>
 
@@ -34,6 +38,16 @@
     <p>/* bold加粗 ，提倡用数字700*/</p>
     <p>/* 多个字体逗号隔开、逐个显示 */</p>
     <p>/* normal // 400 不加粗 */</p>
+    <p style="font-style: italic;">斜体:italic</p>
+    <p>
+        <em style="font-style: normal;"> em斜体标签 font-style: normal变得不倾斜</em>
+    <div class="fuhe">css字体复合属性<br>
+        有要求 font : font-style font-weight font-size/line-hright font-family;<br>
+        <div style="color: red;">不能交换顺序</div>
+        例如:font: itall 700 16px '微软雅黑'<br>其他不写都可以,但是文字大小和字体不能省
+
+    </div>
+    </p>
 </body>
 
 </html>
