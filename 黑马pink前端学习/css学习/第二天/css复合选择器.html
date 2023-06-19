@@ -4,10 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>复合选择器</title>
+    <style>
+        body {
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        h1 {
+            font-weight: 700;
+        }
+    </style>
 </head>
 
 <body>
+    <ol>
+        <p>复合选择器</p>
+        <li>后代选择器</li>
+        <li>子选择器</li>
+        <li>并集选择器</li>
+        <li>伪类选择器</li>
+    </ol>
+
+    <h1>
+        后代选择器(重要)
+    </h1>
+    <ol>
+        <li>
+            元素1 元素2{
+            <p>可以是任意的基础选择器</p>
+            }
+        </li>
+        <li>
+            <p>
+                ol li{
+            <p>只选择ol里面的li</p>
+            }
+            </p>
+        </li>
+        <li>
+            <p>
+                ol li a{
+            <p></p>
+            }
+            </p>
+        </li>
+        <li>
+            .classname li a{
+            <p>根据类名选择</p>
+            }
+        </li>
+    </ol>
+    <h1>子选择器(重要)</h1>
+    <ol>
+        <p>只选择儿子,不能选孙子</p>
+        <li>
+            .nav > a{
+            <p>大于号分割 > </p>
+            }
+        </li>
+    </ol>
+    <h1>
+        并集选择器
+    </h1>
+    <ol>
+        <li>
+            元素1,<br>
+            元素2{
+            <p>可以是任何选择器,一般竖着写</p>
+            }
+        </li>
+        <li>
+            div,<br>
+            p{
+            <p>同时更改div和p标签的效果</p>
+            }
+        </li>
+        <li>
+            div,<br>
+            p,<br>
+            .nav li{
+            <p></p>
+            }
+        </li>
+    </ol>
+    <h1>伪类选择器</h1>
+    <ol>
+        添加特殊效果
+        <li>
+            a:link 选择所有未被访问的链接
+        </li>
+        <li>
+            a:visited 选择所有已被访问的链接
+        </li>
+        <li>
+            a:hover 选择鼠标指针位于其上的链接
+        </li>
+        <li>
+            a:active 选择活动的链接(鼠标按下未弹起的链接)
+        </li>
+    </ol>
 
 </body>
 
