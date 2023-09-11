@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的显示模式</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: normal;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        元素的显示模式
+    </h1>
+    <h2>分为块元素 行内元素</h2>
+
+    <h3>
+        块元素:h1... p div ul ol li
+    </h3>
+    <p>
+        特点:
+    <ul>
+        <div></div>
+        <li>①比较霸道,自己独占- -行。</li>
+        <li>②高度,宽度、外边距以及内边距都可以控制。</li>
+        <li>③宽度默认是容器(父级宽度)的100%。</li>
+        <li>④是一个容器及盒子，里面可以放行内或者块级元素。</li>
+    </ul>
+    <p>
+        注意
+    </p>
+    <ul>
+        <li>文字类的元素内不能使用块级元索</li>
+        <li>p 标签主要用于存放文字,因此p里面不能放块级元素,特别是不能放div</li>
+        <li>h1~. h6等都是文字类块级标签。里面也不能放其他块级元素</li>
+    </ul>
+    <h3>
+        行内元素
+    </h3>
+    <p>
+        特点
+    </p>
+    <ul>
+        <li>①相邻行内元索在一行上, 一行可以显示多个。</li>
+        <li>②高、宽直接设置是无效的。</li>
+        <li>③默认宽度就是它本身内容的宽度。</li>
+        <li>④行内元素只能容纳文本或其他行内元素。</li>
+    </ul>
+    <p>
+        注意
+    </p>
+    <ul>
+        ●链接里面不能再放链接
+        ●特殊情况链接<a>里面可以放块级元素,但是给<a>转换一下块级模式最安全
+    </ul>
+
+</body>
+
+</html>
