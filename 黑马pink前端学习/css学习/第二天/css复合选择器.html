@@ -69,8 +69,7 @@
     </h1>
     <ol>
         <li>
-            元素1,<br>
-            元素2{
+            选择器1, 选择器2{
             <p>可以是任何选择器,一般竖着写</p>
             }
         </li>
@@ -95,7 +94,7 @@
         <ol>
             <p style="color: red;">一定要安装顺序写</p>
             <li>
-                a:link 选择所有未被访问的链接
+                a:link <a href="#">选择所有未被访问的链接</a>
             </li>
             <li>
                 a:visited 选择所有已被访问的链接
@@ -120,5 +119,12 @@
         </ol>
     </div>
 </body>
+<style>
+    a:link {
+        color: #333;
+        /* text-decoration:是文字装饰 */
+        text-decoration: none;
+    }
+</style>
 
 </html>
